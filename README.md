@@ -19,3 +19,5 @@ Due to time constraint, parenthesis was not considered.
 Another function could be created to open a command prompt to accept users mathetical expression and all the user sees would be the prompt interface tht accepts users input.
 guide could had been provided so that when user runs the command 'HELP' on the command line, instructions will display on the terminal and guide the user through on how to use the app.
 
+THE INSTRUCTION FOR THE APP CLEARLY STATED THAT THE PROJECT SHOULD BE DONE WITH PURE JAVASCRIPT.
+
