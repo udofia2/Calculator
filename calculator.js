@@ -1,16 +1,24 @@
-
+const Convert = require('./parse');
 const Run = require('./stack');
-const preResult = require('./toPrefix')
+const Prefix = require('./toPrefix');
+const readline = require('readline');
 
-let a = "2*3+4+2"
-const convert = (value) => {
-    let arr = []
-    value = [...a]  
-    value.map(a => parseInt(a)? arr.push(parseInt(a)) : arr.push(a));
-    return arr
-}
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
 
-let conResult = convert(a)
-let prefix = preResult(conResult)
-let runResult = Run(prefix)
-console.info(runResult)
+rl.question(`please provide your mathetical expression
+example case is 2+2+4
+type here: `, expression => {
+    let conResult = Convert(expression);
+    let preResult = Prefix(conResult);
+    let runResult = Run(preResult)
+    if(runResult.length < 1 || runResult.length > 1 || expression.length < 2){
+        console.log('please provide the mathetical expression as shown in the example above')
+        rl.close()
+    } else {
+        console.log(runResult);
+        rl.close()
+    }
+})
