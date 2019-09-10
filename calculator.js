@@ -15,10 +15,10 @@ type here: `, expression => {
     let preResult = Prefix(conResult);
     let runResult = Run(preResult)
     if(runResult.length < 1 || runResult.length > 1 || expression.length < 2){
-        console.log('please provide the mathetical expression as shown in the example above')
+        console.log('ERROR: please provide the mathetical expression as shown in the example above')
         rl.close()
     } else {
-        console.log(runResult);
+        console.log(`Answer = ${runResult}`);
         rl.close()
     }
 })
