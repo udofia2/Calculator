@@ -2,22 +2,27 @@
 A simple calculator that can calculate mathematical expressions
 
 ## How it works
-a string is provided in the file called calculator.js.
-Calculator.js imports stack.js and toPrefix.js to be used for the calculation.
-Calculator.js first converts the string to array, while
-toPrefix.js converts the given array to prefix, ready for mathetical operation.
+A string is provided in the command line interface after running "node calculator.js" without the quotes.
+
+Calculator.js file imports parse.js, stack.js and toPrefix.js files to be used for the calculation.
+
+parse.js first converts the string provided on the CLI to array, while toPrefix.js converts the given array to prefix, ready for mathetical operation.
 The real calculation is done in the file called stack.js.
 
 ## How to use
 1. clone the repo
-2. mathematical expression is provided as a string and stored in the ques variable(line 5) found in the calculator.js file.
-3. run 'node calculator' on the command line without the quotation marks
-4. the code comes with example string to test the app. User can simple perform step 3 and the app will still work fine.
+2. run 'node calculator' on the command line without the     quotation marks
+3. follow the onscreen instructions on how to use the app
+4. If none mathetical expression is provided, the CLI        closes with an error message. If this happens, please     repeat step 2 and follow the onscreen instructions
 
 ## Features to improve
 Due to time constraint, parenthesis was not considered.
-Another function could be created to open a command prompt to accept users mathetical expression and all the user sees would be the prompt interface tht accepts users input.
-guide could had been provided so that when user runs the command 'HELP' on the command line, instructions will display on the terminal and guide the user through on how to use the app.
+The function of the parenthesis is to give the mathetical operations order of preference (i.e to indicate if to consider multiplication, addition etc first in the expression). Example of mathetical expression with parenthesis is 3*(3+3).
+Another feature to improve on is double values mathetical expressions
+
+
+## Credits
+Many thanks to my mentor THOMAS, who took out time from his busy schedule to test and reviewed my app.
 
 THE INSTRUCTION FOR THE APP CLEARLY STATED THAT THE PROJECT SHOULD BE DONE WITH PURE JAVASCRIPT.
 
