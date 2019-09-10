@@ -22,7 +22,7 @@ Another feature to improve on is double values mathetical expressions
 
 
 ## Credits
-Many thanks to my mentor THOMAS, who took out time from his busy schedule to test and reviewed my app.
+Many thanks to my mentor Mr. THOMAS, who took out time from his busy schedule to test and reviewed my app.
 
 THE INSTRUCTION FOR THE APP CLEARLY STATED THAT THE PROJECT SHOULD BE DONE WITH PURE JAVASCRIPT.
 
